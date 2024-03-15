@@ -25,6 +25,8 @@ function start() { //i broke the boogle it hint terminal command line thing.
   // Hide prize
   document.getElementById('prize').style.display = 'none';
   
+  
+  
   signinMenu()
   setInterval(resetScroll, 500);
 }
@@ -794,8 +796,9 @@ function boogleHomePage(){
   document.getElementById('downloadingGreen').style.display = 'none';
   document.getElementById('downloadingBar').style.display = 'none';  
   document.querySelector('.quiz').style.display = 'none';
-    document.getElementById('hn').style.display = 'none';
-    document.getElementById('hackernetHeader').style.display = 'none';
+  document.getElementById('hn').style.display = 'none';
+  document.getElementById('hackernetHeader').style.display = 'none';
+  document.getElementById('pastapictureswebsite').style.display = 'none';
     
     
     
@@ -807,7 +810,7 @@ function boogleHomePage(){
   
 }
 
-loadVaultGuard()
+//loadVaultGuard()
 function loadVaultGuard(){
   document.getElementById('results').style.display = 'none';
   document.getElementById('vaultguardHeader').style.display = 'initial';
@@ -816,6 +819,14 @@ function loadVaultGuard(){
   document.getElementById('vaultguardSidebar').style.display = 'initial';
   document.getElementById('websiteName').value = 'www.vaultguard.com/myVault/passwordHint.html';
   document.getElementById('browser').style.backgroundColor = 'grey';
+}
+
+
+function pastaPictures(){
+  document.getElementById('results').style.display = 'none';
+  document.getElementById('websiteName').value = 'www.photosofpasta.com';
+  document.getElementById('browser').style.backgroundColor = 'ghostwhite';
+  document.getElementById('pastapictureswebsite').style.display = 'initial';
 }
 
 function downloadCommandLine(){
@@ -1026,10 +1037,7 @@ function progressBar() {
 }
 
 
-function pastaPictures() {
-  document.getElementById('results').style.display = 'none';
-  document.getElementById('browser').style.backgroundColor = '#363f4d'
-}
+
 
 
 
@@ -1263,7 +1271,7 @@ function enter() { // OH MY GOSH THIS THING FINALLY WORKS!!! YESSSSS
       
       
       
-      console.log("FU...el")
+      console.log("this")
       hintRequest = 0;
     }
     
