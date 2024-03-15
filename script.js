@@ -31,7 +31,7 @@ function start() { //i broke the boogle it hint terminal command line thing.
   setInterval(resetScroll, 500);
 }
 
-setTimeout(start, 1);
+setTimeout(start, 10);
 
 var z = 10;
 
