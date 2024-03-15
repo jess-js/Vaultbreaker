@@ -75,11 +75,11 @@
     <!--END Audio Player-->
     
     <!--Safe-->
-    <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/safe.png?v=1708366995316" id="safe" onclick="safeLockedAnimation()">
+    <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/safe.png?v=1708366995316" id="safe" onclick="safeLockedAnimation()" draggable="false">
     
     <!--Openable Safe-->
-    <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/safe%20back.png?v=1709502714046" id="safeBack" onclick="openSafe()">
-    <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/safe%20front.png?v=1709502711662" id="safeFront" onclick="openSafe()">
+    <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/safe%20back.png?v=1709502714046" id="safeBack" onclick="openSafe()" draggable="false">
+    <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/safe%20front.png?v=1709502711662" id="safeFront" onclick="openSafe()" draggable="false">
     
     <!--Password Keypad-->
     <div class="keypadContainer">
@@ -90,7 +90,7 @@
       <p class="enterInfo">Press ENTER.</p>
       <p class="closePassword" onclick="document.querySelector('.keypadContainer').style.display = 'none';">X</p>
       
-        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/hint.png?v=1708431504135" class="hintIcon" onclick="passwordHint()">
+        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/hint.png?v=1708431504135" class="hintIcon" onclick="passwordHint()" draggable="false">
         <p class="hintText">Password Hint</p>
     </div>
     </div>
@@ -100,7 +100,7 @@
     <!--Retinal Scanner-->
     <div id="retinalScanner" onmousedown="retinalPriority()">
       <div id="retinalScannerheader"><p class="retinalScanTitle">Ret nal Scanner</p></div>
-      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/retinal%20scanner.png?v=1708435261031" id="scannerImg">
+      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/retinal%20scanner.png?v=1708435261031" id="scannerImg" draggable="false">
       <p class="closeRetinal" onclick="closeScanner()">X</p>
 <div id="moveableI">
       <p>i</p>
@@ -129,12 +129,12 @@
       </button>-->
       
       <div class="options">
-        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/amazonas.png?v=1708448446662" id="option1" onclick="o1Clicked()">
-        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/tamil%20nadu.png?v=1708448453363" id="option2" onclick="o2Clicked()">
-        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/tver%20oblast.png?v=1708448454100" id="option3" onclick="o3Clicked()">
-        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/france.png?v=1708448448332" id="option4" onclick="o4Clicked()">
-        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/uttar%20pradesh.png?v=1708448454698" id="option5" onclick="o5Clicked()">
-        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/djibouti.png?v=1708449013532" id="option6" onclick="o6Clicked()">
+        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/amazonas.png?v=1708448446662" id="option1" onclick="o1Clicked()" draggable="false">
+        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/tamil%20nadu.png?v=1708448453363" id="option2" onclick="o2Clicked()" draggable="false">
+        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/tver%20oblast.png?v=1708448454100" id="option3" onclick="o3Clicked()" draggable="false">
+        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/france.png?v=1708448448332" id="option4" onclick="o4Clicked()" draggable="false">
+        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/uttar%20pradesh.png?v=1708448454698" id="option5" onclick="o5Clicked()" draggable="false">
+        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/djibouti.png?v=1708449013532" id="option6" onclick="o6Clicked()" draggable="false">
       </div>
       
       <p id="closeVerification" onclick="document.getElementById('robottest').style.display = 'none';">X</p>
@@ -209,6 +209,15 @@
           </p>
         </a>
         
+        <a onclick="pastaPictures()" href="#">
+        <p>
+          Pasta Pictures
+        </p>
+        <p class="description">
+          A gallery of the best pasta the world has to offer🍝
+          </p>
+        </a>
+        
         <!--<a onclick="console.log('clicked')" href="#">
         <p>
           Useless Website
@@ -232,14 +241,7 @@
           
           </div>
         
-        <a onclick="hackerNetPin()" href="#">
-        <p>
-          Pasta Pictures
-        </p>
-        <p class="description">
-          A gallery of the best pasta the world has to offer🍝
-          </p>
-        </a>
+        
         
         
         
@@ -257,7 +259,7 @@
           </p></b>
         </div>
       
-      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/commandLine.png?v=1708546446092" id="commandlinePromo">
+      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/commandLine.png?v=1708546446092" id="commandlinePromo" draggable="false">
         <button id="commandlineLabel" onclick="termsAndConditions()">
           Download
         </button>
@@ -270,7 +272,7 @@
       Please read our terms and conditions carefully before continuing.
     </p>
       <p id="termsandconditions">
-        Terms and conditions are very very important. Why, I hear you ask? Because, without them - there are no terms and conditions! Terms and Conditions are typically incredibly looooong and booooooring to make people not want to pay attention to them, but here at this totally real website running on a totally real browser, we like to make sure our users both want and need to read the terms and conditions through and through. How can we make them need this? We'll get to that. How can we make them want to? With a funny story maybe? Yes, let me tell you a funny story. Jack and Jill went up the hill and... Well, I can't remember the rest. But I think they end up dancing to music or something. Okay, I'll make something up. This story is set in 2100 on Venus. A probe called the 'Scavanger' records footage of aliens down on the surface of the planet. Our protagonists - Jack and Jill are sent down to investigate. Will they make friends with the aliens, will they be enimies? Who can say. Open ended, open-open ended! Closure, closure, closure, closure, closure, closure for you and for me! If you got that reference you're a real one. Anyway, back to the terms and conditions. Terms of use: No. 1 - If you are tamago2474, just know that I'm watching your videos while developing this game. Specifically 'The Possible Quiz 2'. I remember I found your video on the first impossible quiz during the summer and had it playing next to me while playing online. I have now been watching The Possible Quiz 2 on and off for two days while making this game. Anyway, if you're reading this tamago2427: i appreciate you. Term / Condition number 2: shoutout to JackSucksAtLife - been watching you since 2018. Erm, not sure about the next term. No one ever knows exactly when term starts since my school likes to mess the timetable around - a lot. It's annoying. So are these terms I imagine (and hope) so I'll let you get on. And if you made it this far: apparently your attention span is pretty good. Congrats. Before we end the terms, just got to make them look legit if anyone just scrolls to the bottom. *clears throat* Always with copyright there must be an indentation in the inversion program to make sure of the verification of authenticity, license of boogle doogle poodle. 
+        Terms and conditions are very very important. Why, I hear you ask? Because, without them - there are no terms and conditions! Terms and Conditions are typically incredibly looooong and booooooring to make people not want to pay attention to them, but here at this totally real website running on a totally real browser, we like to make sure our users both want and need to read the terms and conditions through and through. How can we make them need this? We'll get to that. How can we make them want to? With a funny story maybe? Yes, let me tell you a funny story. Jack and Jill went up the hill and... Well, I can't remember the rest. But I think they end up dancing to music or something. Okay, I'll make something up. This story is set in 2100 on Venus. A probe called the 'scavenger' records footage of aliens down on the surface of the planet. Our protagonists - Jack and Jill are sent down to investigate. Will they make friends with the aliens, will they be enimies? Who can say. Open ended, open-open ended! Closure, closure, closure, closure, closure, closure for you and for me! If you got that reference you're a real one. Anyway, back to the terms and conditions. Terms of use: No. 1 - If you are tamago2474, just know that I'm watching your videos while developing this game. Specifically 'The Possible Quiz 2'. I remember I found your video on the first impossible quiz during the summer and had it playing next to me while playing online. I have now been watching The Possible Quiz 2 on and off for two days while making this game. Anyway, if you're reading this tamago2427: i appreciate you. Term / Condition number 2: shoutout to JackSucksAtLife - been watching you since 2018. Erm, not sure about the next term. No one ever knows exactly when term starts since my school likes to mess the timetable around - a lot. It's annoying. So are these terms I imagine (and hope) so I'll let you get on. And if you made it this far: apparently your attention span is pretty good. Congrats. Before we end the terms, just got to make them look legit if anyone just scrolls to the bottom. *clears throat* Always with copyright there must be an indentation in the inversion program to make sure of the verification of authenticity, license of boogle doogle poodle. 
       </p>
       <button id="tcContinue" onclick="tacQuiz()">
         Continue →
@@ -321,7 +323,7 @@
       
       <!--Hackernet-->
       <div id="hackernetHeader">
-        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/hackernet%20logo.png?v=1709764136135" id="hackernet">
+        <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/hackernet%20logo.png?v=1709764136135" id="hackernet" draggable="false">
       </div>
       <!--Hack Pin Tutorial-->
       
@@ -367,12 +369,13 @@
       
       </div>
       
-      
+      <!--Pasta Pictures-->
+      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/pastapictures.png?v=1710543441558" id="pastapictureswebsite" draggable="false">
       
 
       
       
-      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/Boogle.png?v=1708511647267" id="boogleLogo" onclick="boogleHomePage()">
+      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/Boogle.png?v=1708511647267" id="boogleLogo" onclick="boogleHomePage()" draggable="false">
     </div>
     <!--END Browser-->
     
@@ -443,7 +446,7 @@
     
     <div id="applications">
       
-      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/commandLine.png?v=1708546446092" id="commandLine" onclick="openCommandLine()" onmouseover="document.getElementById('clTag').style.display = 'initial'; document.getElementById('clTag').style.zIndex = z+1; z=z+1;" onmouseleave="document.getElementById('clTag').style.display = 'none';">
+      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/commandLine.png?v=1708546446092" id="commandLine" onclick="openCommandLine()" onmouseover="document.getElementById('clTag').style.display = 'initial'; document.getElementById('clTag').style.zIndex = z+1; z=z+1;" onmouseleave="document.getElementById('clTag').style.display = 'none';" draggable="false">
       <p id="clTag">
         Command Line
       </p>
@@ -456,7 +459,7 @@
     <div id="commandLineApp" onmousedown="commandLinePriority()" onmouseup="selectBash()">
       <div id="commandLineAppheader"></div>
       
-      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/keyhole.png?v=1708731826865" id="keyhole">
+      <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/keyhole.png?v=1708731826865" id="keyhole" draggable="false">
       <p id="keyholeLabel">
         Command Line is Locked.
       </p>
@@ -483,7 +486,7 @@
     </p>
     
     
-    <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/buymeacoffee.png?v=1710270122094" id="buymeacoffee" onclick="window.open('https://www.buymeacoffee.com/jesssilver', '_blank');">
+    <img src="https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/buymeacoffee.png?v=1710270122094" id="buymeacoffee" onclick="window.open('https://www.buymeacoffee.com/jesssilver', '_blank');" draggable="false">
       
   </body>
   
