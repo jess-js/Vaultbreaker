@@ -299,7 +299,7 @@ var questionNumber = 0;
 // 5 = Who is fake smiling?
 
 function generateNumber() {
-  questionNumber = Math.floor((Math.random() * 6)); // random number 0 - 5 inclusive
+  questionNumber = Math.floor((Math.random() * 10)); // random number 0 - 5 inclusive
   
   setTimeout("if (answeredQuestions.includes(questionNumber)){generateNumber()} else {newQuestion()}", 10);
   
@@ -309,7 +309,7 @@ function newQuestion() {
   
   
   
-  if (usedQuestions.length > 5) {
+  if (usedQuestions.length > 9) {
     usedQuestions = []
   }
   
@@ -403,6 +403,66 @@ function newQuestion() {
     img6.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/real%204.png?v=1708460116819" // Real
     
     usedQuestions.push('5');
+    
+  } else if (questionNumber == 6 && usedQuestions.includes('6')){generateNumber()} else if (questionNumber == 6) {
+    
+    //Smiling
+    
+    questionText.innerHTML = "Select the US States beginning with 'M'.";
+    
+    img1.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/Florida.png?v=1710455125990" // Florida
+    img2.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/Massachusetts.png?v=1710455127082" // Massachusetts
+    img3.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/Missouri.png?v=1710455128604" // Missouri
+    img4.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/Minnesota.png?v=1710455127629" // Minnesota
+    img5.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/Kentucky.png?v=1710455126566" // Kentucky
+    img6.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/Mississippi.png?v=1710455128188" // Mississippi
+    
+    usedQuestions.push('6');
+    
+  } else if (questionNumber == 7 && usedQuestions.includes('7')){generateNumber()} else if (questionNumber == 7) {
+    
+    //Smiling
+    
+    questionText.innerHTML = "Select the photo(s) taken in Greenville, SC";
+    
+    img1.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/chicago.png?v=1710456287381" // Chicago
+    img2.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/las%20vegas.png?v=1710456287941" // Las Vegas
+    img3.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/nyc.png?v=1710456288735" // NYC
+    img4.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/san%20francisco.png?v=1710456289869" // San Francisco
+    img5.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/seattle.png?v=1710456290478" // Seattle
+    img6.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/yes.png?v=1710456291032" // Greenville, SC
+    
+    usedQuestions.push('7');
+    
+  } else if (questionNumber == 8 && usedQuestions.includes('8')){generateNumber()} else if (questionNumber == 8) {
+    
+    //Smiling
+    
+    questionText.innerHTML = "Select the (botanical) classified fruits.";
+    
+    img1.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/apple.png?v=1710539072183" // Apple
+    img2.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/couzucchini.png?v=1710539074584" // Courgette / Zucchini
+    img3.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/tomato.png?v=1710539082876" // Tomato
+    img4.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/rhubarb.png?v=1710539082291" // Rhubarb
+    img5.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/avocado.png?v=1710539072976" // Avocado
+    img6.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/cucumber.png?v=1710539079600" // Cucumber
+    
+    usedQuestions.push('8');
+    
+  } else if (questionNumber == 9 && usedQuestions.includes('9')){generateNumber()} else if (questionNumber == 9) {
+    
+    //Smiling
+    
+    questionText.innerHTML = "Select the equations that equal 100.";
+    
+    img1.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/99.png?v=1710540780962" // 99
+    img2.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/100.png?v=1710540781545" // 100
+    img3.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/correct.png?v=1710540783129" // 100
+    img4.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/incorrect.png?v=1710540783592" // idk but its not 100
+    img5.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/1100.png?v=1710540782088" // 1100
+    img6.src = "https://cdn.glitch.global/6356b20f-3b77-4adc-abb9-a2d54082e3a9/also%20100.png?v=1710540782679" // 100
+    
+    usedQuestions.push('9');
     
   }
   
@@ -507,6 +567,78 @@ function submitVerification(){
      if (o1 == 1 && o2 == 0 && o3 == 0 && o4 == 0 && o5 == 1 && o6 == 0) {
     console.log("Success")
        answeredQuestions.push(5);
+       round = round + 1;
+    resetClicked()
+       if (round == 2) {roundMarker.innerHTML = "2/3"} else if (round == 3) {roundMarker.innerHTML = "3/3"} else if (round == 4) {verificationComplete()}
+       generateNumber()
+       questionRightAnimation()
+  } else {
+    console.log("Failed")
+    resetClicked()
+    questionWrongAnimation()
+  }
+    
+  } else if (questionNumber == 6) {
+    
+    //Select the US States beginning with M.
+    
+     if (o1 == 0 && o2 == 1 && o3 == 1 && o4 == 1 && o5 == 0 && o6 == 1) {
+    console.log("Success")
+       answeredQuestions.push(6);
+       round = round + 1;
+    resetClicked()
+       if (round == 2) {roundMarker.innerHTML = "2/3"} else if (round == 3) {roundMarker.innerHTML = "3/3"} else if (round == 4) {verificationComplete()}
+       generateNumber()
+       questionRightAnimation()
+  } else {
+    console.log("Failed")
+    resetClicked()
+    questionWrongAnimation()
+  }
+    
+  } else if (questionNumber == 7) {
+    
+    //Select the US States beginning with M.
+    
+     if (o1 == 0 && o2 == 0 && o3 == 0 && o4 == 0 && o5 == 0 && o6 == 1) {
+    console.log("Success")
+       answeredQuestions.push(7);
+       round = round + 1;
+    resetClicked()
+       if (round == 2) {roundMarker.innerHTML = "2/3"} else if (round == 3) {roundMarker.innerHTML = "3/3"} else if (round == 4) {verificationComplete()}
+       generateNumber()
+       questionRightAnimation()
+  } else {
+    console.log("Failed")
+    resetClicked()
+    questionWrongAnimation()
+  }
+    
+  } else if (questionNumber == 8) {
+    
+    //Select the US States beginning with M.
+    
+     if (o1 == 1 && o2 == 1 && o3 == 1 && o4 == 0 && o5 == 1 && o6 == 1) {
+    console.log("Success")
+       answeredQuestions.push(8);
+       round = round + 1;
+    resetClicked()
+       if (round == 2) {roundMarker.innerHTML = "2/3"} else if (round == 3) {roundMarker.innerHTML = "3/3"} else if (round == 4) {verificationComplete()}
+       generateNumber()
+       questionRightAnimation()
+  } else {
+    console.log("Failed")
+    resetClicked()
+    questionWrongAnimation()
+  }
+    
+  } else if (questionNumber == 9) {
+    
+    //Select the US States beginning with M.
+    
+     if (o1 == 0 && o2 == 1 && o3 == 1 && o4 == 0 && o5 == 0 && o6 == 1) {
+    console.log("Success")
+       answeredQuestions.push(9);
        round = round + 1;
     resetClicked()
        if (round == 2) {roundMarker.innerHTML = "2/3"} else if (round == 3) {roundMarker.innerHTML = "3/3"} else if (round == 4) {verificationComplete()}
@@ -721,7 +853,7 @@ tcQuestionFunction()
 var tcQuestion;
 
 function tcQuestionFunction(){
-  tcQuestion = Math.floor((Math.random() * 6)); // random number 0 - 2 inclusive
+  tcQuestion = Math.floor((Math.random() * 10)); // random number 0 - 2 inclusive
   
   if (tcQuestion == '0') {
     document.getElementById('tcQuestionTitle').innerHTML = 'Why are terms and conditions important?'
@@ -759,6 +891,30 @@ function tcQuestionFunction(){
     document.getElementById('optionB').innerHTML = 'doodle'
     document.getElementById('optionC').innerHTML = "poodle" //
     document.getElementById('optionD').innerHTML = 'Full Stop.'
+  } else if (tcQuestion == '6') {
+    document.getElementById('tcQuestionTitle').innerHTML = "What is a good name for a Venus probe?"
+    document.getElementById('optionA').innerHTML = 'Scavenger' //
+    document.getElementById('optionB').innerHTML = 'Wanderer'
+    document.getElementById('optionC').innerHTML = "Traveller"
+    document.getElementById('optionD').innerHTML = 'Graveller'
+  } else if (tcQuestion == '7') {
+    document.getElementById('tcQuestionTitle').innerHTML = "When is the story set?"
+    document.getElementById('optionA').innerHTML = '5001'
+    document.getElementById('optionB').innerHTML = '2100' //
+    document.getElementById('optionC').innerHTML = "2020"
+    document.getElementById('optionD').innerHTML = '1993'
+  } else if (tcQuestion == '8') {
+    document.getElementById('tcQuestionTitle').innerHTML = "Why are terms and conditions to boring?"
+    document.getElementById('optionA').innerHTML = "They're not"
+    document.getElementById('optionB').innerHTML = 'Because'
+    document.getElementById('optionC').innerHTML = "To make people not pay attention to them" //
+    document.getElementById('optionD').innerHTML = 'Written by lawyers'
+  } else if (tcQuestion == '9') {
+    document.getElementById('tcQuestionTitle').innerHTML = "Which came first?"
+    document.getElementById('optionA').innerHTML = 'JackSucksAtLife'
+    document.getElementById('optionB').innerHTML = 'JackSucksAtMinecraft' //
+    document.getElementById('optionC').innerHTML = "JackSucksAtStuff"
+    document.getElementById('optionD').innerHTML = 'JackSucksAtGeography'
   }
   
 }
@@ -766,6 +922,10 @@ function tcQuestionFunction(){
 function optA() {
   if (tcQuestion == '1') {
     tcQuizRight()
+  }
+    else if (tcQuestion == '6') {
+      tcQuizRight()
+    
   } else {
     tcQuizWrong()
   }
@@ -776,6 +936,10 @@ function optB() {
     tcQuizRight()
   } else  if (tcQuestion == '4') {
     tcQuizRight()
+  } else if (tcQuestion == '7') {
+    tcQuizRight()
+  } else if (tcQuestion == '9'){
+    tcQuizRight()
   } else {
     tcQuizWrong()
   }
@@ -785,6 +949,8 @@ function optC() {
     if (tcQuestion == '3') {
     tcQuizRight()
   } else  if (tcQuestion == '5') {
+    tcQuizRight()
+  } else  if(tcQuestion == '8') {
     tcQuizRight()
   } else {
     tcQuizWrong()
