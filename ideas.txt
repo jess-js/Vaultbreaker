@@ -1,0 +1,3 @@
+Future development ideas:
+-After 3 digit pin is correct, you have to hack an email for verification purpoises.
+-'The Passsword Game' inspired minigame when resetting your password
